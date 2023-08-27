@@ -9,7 +9,6 @@ const server = http.createServer((req, res) => {
     filePath = "./home";
   }
   filePath = path.join(__dirname, `${filePath}.html`);
-  console.log(filePath);
 
   fs.readFile(filePath, (err, content) => {
     if (err) {
